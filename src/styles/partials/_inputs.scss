@@ -1,0 +1,116 @@
+@import "mixins";
+@import "typography";
+@import "variables";
+
+@mixin siro-newsletter-input {
+  border: none;
+  border-bottom: 1px solid $siro-primary--white;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 18px;
+  @include siro_cta;
+  color: $siro-primary--white;
+  width: 100px;
+
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: $siro-primary--white;
+  }
+  @include breakpoint("md-min") {
+    width: 250px;
+  }
+}
+
+@mixin siro-input-select-error-form {
+  font-size: 10px;
+  line-height: 14px;
+  position: absolute;
+  @include siro_label;
+  color: $siro-state--error;
+  bottom: -20px;
+  left: 0;
+  letter-spacing: 0.1px;
+  @include breakpoint("md-min") {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@mixin siro-form-input-select-label {
+  position: absolute;
+  top: -4px;
+  @include siro_label;
+  font-size: 10px;
+  line-height: 14px;
+  color: $siro-tertiary--dark-grey;
+  padding: 0;
+  letter-spacing: 0.1px;
+  @include breakpoint("md-min") {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@mixin siro-form-input-select {
+  border: none;
+  border-bottom: 1px solid $siro-primary--black;
+  background-color: transparent;
+  padding: 16px 0 12px 0;
+  @include siro_label;
+  font-size: 14px;
+  line-height: 18px;
+  color: $siro-primary--black;
+  width: 100%;
+  letter-spacing: 0.1px;
+
+  &:focus {
+    outline: none;
+  }
+  &:disabled {
+    border-bottom: 1px solid $siro-tint--mid-grey;
+    color: $siro-tint--mid-grey;
+  }
+
+  &::placeholder {
+    color: $siro-tint--mid-grey;
+  }
+  @include breakpoint("md-min") {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 0 14px 0;
+  }
+}
+
+@mixin siro-form-textarea {
+  padding: 16px 0 12px 0;
+  border: none;
+  border-bottom: 1px solid $siro-primary--black;
+  background-color: transparent;
+  @include siro_label;
+  font-size: 14px;
+  line-height: 18px;
+  color: $siro-primary--black;
+  height: 120px;
+  resize: none;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: $siro-tint--mid-grey;
+  }
+  &:disabled {
+    border-bottom: 1px solid $siro-tint--mid-grey;
+    color: $siro-tint--mid-grey;
+  }
+
+  @include breakpoint("md-min") {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 0 14px 0;
+    height: 122px;
+  }
+}

@@ -1,0 +1,36 @@
+.siro_green {
+  background: $siro-primary--green !important;
+}
+
+.siro_black {
+  background: $siro-primary--black !important;
+}
+
+.siro_white {
+  background: $siro-primary--white !important;
+  h4,
+  h6,
+  a,
+  p,
+  input,
+  input::placeholder,
+  button,
+  select,
+  option,
+  span {
+    color: black !important;
+    border-color: black !important;
+  }
+  .invert_icon_light_background {
+    filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(180deg);
+  }
+  a::after {
+    background: black !important;
+  }
+  .siro_white__animated_icon {
+    & > span {
+      background-color: black !important;
+      outline: 1px solid white !important;
+    }
+  }
+}

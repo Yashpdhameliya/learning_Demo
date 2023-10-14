@@ -1,0 +1,32 @@
+@import "mixins";
+@import "typography";
+@import "variables";
+
+@mixin siro-white-fill-button {
+  padding: 8px 24px;
+  font-size: 12px;
+  line-height: 14px;
+  @include siro_cta;
+  border-radius: 32px;
+  border: 1px solid $siro-primary--white;
+  color: $siro-primary--green;
+  background-color: $siro-primary--white;
+  text-align: center;
+  @include transition-3s;
+  cursor: pointer;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $siro-secondary--yellow;
+    @include transition-3s;
+  }
+
+  @include breakpoint("md-min") {
+    padding: 12px 24px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &:disabled {
+    color: $siro-tint--mid-grey;
+    cursor: not-allowed;
+  }
+}

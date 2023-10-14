@@ -1,0 +1,29 @@
+@mixin siro_heading {
+  font-style: normal;
+  font-family: "GT-Flexa-Condensed-Light";
+}
+
+@mixin siro_logo_heading {
+  font-style: normal;
+  font-family: "GT-Flexa-Standard-Regular";
+}
+
+@mixin siro_body {
+  font-family: "BiancoSans-Regular";
+  font-style: normal;
+}
+
+@mixin siro_body_bold {
+  font-family: "BiancoSans-Bold";
+  font-style: normal;
+}
+
+@mixin siro_label {
+  font-family: "BiancoSans-Regular";
+  font-style: normal;
+}
+
+@mixin siro_cta {
+  font-family: "BiancoSans-Regular";
+  font-style: normal;
+}
