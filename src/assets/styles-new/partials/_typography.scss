@@ -1,0 +1,140 @@
+@mixin desktop-heading1 {
+  font-family: "GT-Flexa-Condensed-Light";
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 50px;
+  font-style: normal;
+}
+
+@mixin desktop-heading2 {
+  font-family: "GT-Flexa-Condensed-Light";
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 42px;
+  font-style: normal;
+}
+
+@mixin desktop-heading4 {
+  font-family: "GT-Flexa-Condensed-Light";
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  font-style: normal;
+}
+
+@mixin desktop-body-medium-regular {
+  font-family: "BiancoSans-Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  font-style: normal;
+}
+
+@mixin desktop-body-small-regular {
+  font-family: "BiancoSans-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@mixin desktop-call-to-action-small {
+  font-family: "BiancoSans-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  font-style: normal;
+}
+
+@mixin mobile-heading1 {
+  font-family: "GT-Flexa-Condensed-Light";
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+@mixin mobile-heading2 {
+  font-family: "GT-Flexa-Condensed-Light";
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  font-style: normal;
+}
+
+@mixin mobile-heading3 {
+  font-family: "GT-Flexa-Condensed-Light";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@mixin mobile-heading4 {
+  font-family: "GT-Flexa-Condensed-Light";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-style: normal;
+}
+
+@mixin mobile-body-medium-regular {
+  font-family: "BiancoSans-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  font-style: normal;
+}
+
+@mixin mobile-body-small-regular {
+  font-family: "BiancoSans-Regular";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+}
+
+@mixin mobile-labels-small {
+  font-family: "BiancoSans-Regular";
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+@mixin siro_logo_heading {
+  font-family: "GT-Flexa-Standard-Regular";
+  font-style: normal;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin pointer {
+  cursor: pointer;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin block-display {
+  display: block;
+}
+
+@mixin center-text {
+  text-align: center;
+}
+
+@mixin rounded-border {
+  border-radius: 10px;
+
+  @include breakpoint("sm-max") {
+    border-radius: 5px;
+  }
+}

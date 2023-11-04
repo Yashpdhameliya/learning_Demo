@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "GT-Flexa-Condensed-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/gt_flexa/GT-Flexa-Condensed-Light.woff2") format("woff2"),
+    url("../../fonts/gt_flexa/GT-Flexa-Condensed-Light.woff") format("woff"),
+    url("../../fonts/gt_flexa/GT-Flexa-Condensed-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GT-Flexa-Condensed-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/gt_flexa/GT-Flexa-Condensed-Regular.woff2") format("woff2"),
+    url("../../fonts/gt_flexa/GT-Flexa-Condensed-Regular.woff") format("woff"),
+    url("../../fonts/gt_flexa/GT-Flexa-Condensed-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GT-Flexa-Standard-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/gt_flexa/GT-Flexa-Standard-Regular.otf");
+}
+
+@font-face {
+  font-family: "BiancoSans-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/biancoSans/BiancoSans-Regular.woff2") format("woff2"), url("../../fonts/biancoSans/BiancoSans-Regular.woff") format("woff"),
+    url("../../fonts/biancoSans/BiancoSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BiancoSans-Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../../fonts/biancoSans/BiancoSans-Bold.ttf") format("woff2"), url("../../fonts/biancoSans/BiancoSans-Bold.woff") format("woff"),
+    url("../../fonts/biancoSans/BiancoSans-Bold.ttf") format("truetype");
+}

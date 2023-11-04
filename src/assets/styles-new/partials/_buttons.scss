@@ -1,0 +1,30 @@
+@import "mixins";
+@import "typography";
+@import "variables";
+
+@mixin siro-green-button {
+  padding: 8px 20px;
+  @include mobile-body-small-regular;
+  border-radius: 32px;
+  border: none;
+  color: $siro-white;
+  background-color: $siro-green;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  @include three-second-transition;
+
+  &:hover {
+    background-color: $siro-dark-green;
+    @include three-second-transition;
+  }
+  &:disabled {
+    color: $siro-mid-grey;
+    cursor: not-allowed;
+  }
+  @include breakpoint("md-min") {
+    padding: 12px 24px;
+    @include desktop-call-to-action-small;
+  }
+}

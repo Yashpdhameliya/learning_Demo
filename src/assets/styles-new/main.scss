@@ -1,0 +1,27 @@
+@import "configs/baseConfig";
+@import "partials/base";
+
+.error-page {
+  height: calc(100vh - 120px);
+  padding: 80px;
+  @include flex-center;
+  flex-direction: column;
+
+  h4 {
+    @include mobile-heading4;
+    color: $siro-white;
+    margin: 0;
+  }
+  p {
+    @include desktop-call-to-action-small;
+    color: $siro-state--error;
+    text-align: center;
+  }
+}
+
+.components-height-top-padding {
+  padding-top: 75px;
+}
+.components-no-padding {
+  padding-top: 0px;
+}

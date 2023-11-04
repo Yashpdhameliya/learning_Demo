@@ -1,0 +1,34 @@
+@import "variables";
+@import "mixins";
+@import "theming";
+@import "typography";
+@import "animations";
+@import "buttons";
+@import "inputs";
+
+// container utility classes
+
+.container-lg,
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  @include breakpoint("xl-max") {
+    padding: 0 30px;
+  }
+
+  @include breakpoint("sm-max") {
+    padding: 0;
+  }
+}
+
+.container-lg-2 {
+  max-width: 844px;
+  margin: 0 auto;
+  @include breakpoint("xl-max") {
+    padding: 0 30px;
+  }
+
+  @include breakpoint("sm-max") {
+    padding: 0;
+  }
+}

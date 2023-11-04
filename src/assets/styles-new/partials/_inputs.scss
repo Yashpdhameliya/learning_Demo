@@ -1,0 +1,101 @@
+@import "mixins";
+@import "typography";
+@import "variables";
+
+@mixin siro-newsletter-input {
+  border: none;
+  border-bottom: 1px solid $siro-white;
+  background-color: transparent;
+  @include desktop-call-to-action-small;
+  color: $siro-white;
+  width: 100px;
+
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: $siro-white;
+  }
+  @include breakpoint("md-min") {
+    width: 250px;
+  }
+}
+
+@mixin siro-input-select-error-form {
+  position: absolute;
+  @include mobile-labels-small;
+  color: $siro-state--error;
+  bottom: -20px;
+  left: 0;
+  letter-spacing: 0.1px;
+  @include breakpoint("md-min") {
+    @include mobile-body-small-regular;
+  }
+}
+
+@mixin siro-form-input-select-label {
+  position: absolute;
+  top: -4px;
+  @include mobile-labels-small;
+  padding: 0;
+  letter-spacing: 0.1px;
+  @include breakpoint("md-min") {
+    @include mobile-body-small-regular;
+  }
+}
+
+@mixin siro-form-input-select {
+  border: none;
+  border-bottom: 1px solid;
+  background-color: transparent;
+  padding: 16px 0 12px 0;
+  @include desktop-call-to-action-small;
+  width: 100%;
+  letter-spacing: 0.1px;
+
+  &:focus {
+    outline: none;
+  }
+  &:disabled {
+    border-bottom: 1px solid $siro-mid-grey;
+    color: $siro-mid-grey;
+  }
+
+  &::placeholder {
+    color: $siro-mid-grey;
+  }
+  @include breakpoint("md-min") {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 0 14px 0;
+  }
+}
+
+@mixin siro-form-textarea {
+  padding: 16px 0 12px 0;
+  border: none;
+  border-bottom: 1px solid;
+  background-color: transparent;
+  @include desktop-call-to-action-small;
+  height: 120px;
+  resize: none;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: $siro-mid-grey;
+  }
+  &:disabled {
+    border-bottom: 1px solid $siro-mid-grey;
+    color: $siro-mid-grey;
+  }
+
+  @include breakpoint("md-min") {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 0 14px 0;
+    height: 122px;
+  }
+}
