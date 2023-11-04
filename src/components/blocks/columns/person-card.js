@@ -19,7 +19,7 @@ export default function PersonCard({ name, photo, role }) {
             <Image
               className="avatar"
               src={photo.url}
-              alt={name}
+              alt={name|| 'demo'}
               title={name}
               layout="fill"
             />

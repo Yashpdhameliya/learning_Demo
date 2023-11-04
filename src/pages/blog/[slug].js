@@ -87,7 +87,7 @@ export default function BlogPost({ nextPost, post, previousPost }) {
                       <Image
                         className="avatar"
                         src={author.photo.url}
-                        alt={author.name}
+                        alt={author.name|| 'demo'}
                         title={author.name}
                         layout="fill"
                       />
@@ -119,7 +119,7 @@ export default function BlogPost({ nextPost, post, previousPost }) {
                 <Image
                   className="cover-image"
                   src={post.coverImage.url}
-                  alt={post.coverImage.title}
+                  alt={post.coverImage.title || 'demo'}
                   title={post.coverImage.title}
                   height={post.coverImage.height}
                   width={post.coverImage.width}

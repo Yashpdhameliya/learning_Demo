@@ -6,8 +6,7 @@ import Button from '@/components/button'
 import Navigation from '@/components/navigation'
 
 export default function Hero({ buttons, image, navigation, page }) {
-
-  console.log("pagepage",page)
+  console.log('pagepage', page)
   return (
     <Box position="relative" bg="gray.50">
       <Navigation {...navigation} />
@@ -78,7 +77,7 @@ export default function Hero({ buttons, image, navigation, page }) {
           <Image
             className="hero-image"
             src={image.url}
-            alt={image.title}
+            alt={image.title || 'demo'}
             title={image.title}
             layout="fill"
             priority={true}

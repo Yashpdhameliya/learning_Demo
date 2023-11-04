@@ -5,7 +5,7 @@ import { SiteLayout } from '../../src/components/layout'
 
 import { defaultSEO } from '../../next-seo.config'
 import { theme } from '../../src/assets/styles/theme'
-import '../../src/assets/styles/css/global.css'
+import '../../src/assets/styles/global.css'
 
 export default function App({ Component, pageProps }) {
   const getLayout =

@@ -27,7 +27,7 @@ export default function Testimonial({ content, person }) {
           <Box h={8} pos="relative">
             <Image
               src={person.company.logo.url}
-              alt={person.company.logo.title}
+              alt={person.company.logo.title|| 'demo'}
               layout="fill"
             />
           </Box>

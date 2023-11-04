@@ -31,7 +31,7 @@ export default function Navigation({ pages }) {
   const container = useRef(null)
   const router = useRouter()
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
-console.log("pagespages",pages)
+  console.log('pagespages', pages)
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (!container?.current?.contains(event.target)) {
@@ -94,8 +94,8 @@ console.log("pagespages",pages)
               <Flex alignItems="center" justifyContent="space-between">
                 <div>
                   <Link href="/">
-                      <VisuallyHidden>Hygraph</VisuallyHidden>
-                      <Box as={MarkSVG} h={8} w="auto" color="indigo.600" />
+                    <VisuallyHidden>Hygraph</VisuallyHidden>
+                    <Box as={MarkSVG} h={8} w="auto" color="indigo.600" />
                   </Link>
                 </div>
                 <Box mr={-2}>
@@ -170,10 +170,8 @@ console.log("pagespages",pages)
         >
           <Flex w={{ lg: 0 }} flex={{ lg: '1 1 0' }}>
             <Link href="/">
-              {/* <a>
-                <VisuallyHidden>Hygraph</VisuallyHidden>
-                <Box as={LogoSVG} h={10} color="indigo.600" w="auto" />
-              </a> */}
+              <VisuallyHidden>Hygraph</VisuallyHidden>
+              <Box as={LogoSVG} h={10} color="indigo.600" w="auto" />
             </Link>
           </Flex>
           <Box mr={-2} my={-2} display={{ md: 'none' }}>
