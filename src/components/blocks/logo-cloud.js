@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function LogoCloud({ companies, logoCloudTitle }) {
   if (!(logoCloudTitle || companies || companies.length)) return null
-
+  
   return (
     <Box bg="indigo.700">
       <Box maxW="7xl" mx="auto" py={[16, 20]} px={[4, 6, null, 8]}>
@@ -20,20 +20,21 @@ export default function LogoCloud({ companies, logoCloudTitle }) {
           >
             {companies.map((company) => (
               <Flex
-                key={company.id}
+                key={company?.id}
                 mt={4}
                 ml={{ base: 8, lg: 4 }}
                 flexGrow={{ base: 1, lg: 0 }}
                 flexShrink="0"
               >
                 <Box pos="relative" w={44}>
-                  <Image
-                    src={company.logo.url}
-                    height={company.logo.height}
-                    width={company.logo.width}
+                  <img src={company?.logo?.url} alt="adsads" />
+                  {/* <Image
+                    src={company?.logo?.url}
+                    height={company?.logo?.height}
+                    width={company?.logo?.width}
                     layout="responsive"
-                    alt={company.logo.title|| 'demo'}
-                  />
+                    alt={company?.logo?.title || 'demo'}
+                  /> */}
                 </Box>
               </Flex>
             ))}

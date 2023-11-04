@@ -7,7 +7,6 @@ import { parsePageData } from '@/utils/_parsePageData'
 import Wrapper from '@/components/wrapper'
 
 export default function Page({ page }) {
-  console.log("pagepage",page)
   return <Wrapper {...page} />
 }
 

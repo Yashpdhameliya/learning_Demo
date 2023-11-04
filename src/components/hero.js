@@ -6,7 +6,6 @@ import Button from '@/components/button'
 import Navigation from '@/components/navigation'
 
 export default function Hero({ buttons, image, navigation, page }) {
-  console.log('pagepage', page)
   return (
     <Box position="relative" bg="gray.50">
       <Navigation {...navigation} />

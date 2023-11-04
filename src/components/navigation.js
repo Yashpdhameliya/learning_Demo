@@ -31,7 +31,6 @@ export default function Navigation({ pages }) {
   const container = useRef(null)
   const router = useRouter()
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
-  console.log('pagespages', pages)
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (!container?.current?.contains(event.target)) {
