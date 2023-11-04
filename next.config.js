@@ -6,6 +6,6 @@ module.exports = {
     locales: locales.map((locale) => locale.value)
   },
   images: {
-    domains: ['media.graphassets.com']
+    domains: ['media.graphassets.com',`https://media.graphassets.com/fvZBfRKSzq0fjjNCeOGy`]
   }
 }
